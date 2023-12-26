@@ -11,8 +11,9 @@ This repo allows users to spin a functioning movie plot search using langchain, 
 ## Setup
 1. Clone the repo:
 ```
-git clone ...
+git clone https://github.com/mongodb-developer/local-atlas-vector-search-sandbox.git
 ```
+2. Unzip the data file `sample_mflix.embedded_movies.json.zip` to `sample_mflix.embedded_movies.json`
 2. Grant execution to the `run.sh`:
 ```
 chmod +x run.sh
