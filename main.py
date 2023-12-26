@@ -42,6 +42,7 @@ collection.create_search_index(model={"definition": {"mappings":{
 # sleep for minute
 print ('Waiting for vector index on field "embedding" to be created')
 time.sleep(60)
+print('')
 
 ## Create a vector store
 vector_store = MongoDBAtlasVectorSearch(embedding=OpenAIEmbeddings(), collection=collection, index_name='default', text_key='plot', embedding_key='plot_embedding')
@@ -49,6 +50,7 @@ print('Searching for: What movies are scary?')
 
 ## Search for similar movies
 movies = vector_store.similarity_search('What movies are scary?', 3)
+print('')
 for movie in movies:
     print('Movie title: ' + movie.metadata['title'] )
     print('Plot: ' + movie.page_content)
