@@ -19,9 +19,9 @@ fi
 
 export OPENAI_API_KEY=$1
 
-# Step 1: Install MongoDB Atlas CLI
-echo "Installing MongoDB Atlas CLI..."
-# Add the MongoDB Atlas CLI installation commands here
+# Step 1: Verify dependencies
+echo "Check dependencies..."
+check_dependencies
 
 # Step 2: Set up local MongoDB deployment
 echo "Setting up local MongoDB deployment..."
