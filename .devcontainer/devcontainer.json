@@ -1,8 +1,7 @@
 {
     "name": "My CentOS Workspace",
     "build": {
-        "dockerfile": "Dockerfile",
-        "context": "."
+        "dockerfile": "../Dockerfile"
     }
     // other configurations
 }
