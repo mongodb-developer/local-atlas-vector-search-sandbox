@@ -2,9 +2,6 @@
     "name": "My CentOS Workspace",
     "build": {
         "dockerfile": "../Dockerfile"
-    },
-    "features": {
-        "ghcr.io/devcontainers-contrib/features/mongodb-atlas-cli-homebrew:1": {}
     }
 }
     
