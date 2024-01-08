@@ -1,6 +1,9 @@
 # Use the latest CentOS image as the base
 FROM centos:latest
 
+# Clean up the cache to reduce image size
+RUN yum clean all
+
 # Update the package manager and install Python 3
 RUN yum -y update && \
     yum -y install python3
@@ -8,8 +11,6 @@ RUN yum -y update && \
 # Install pip for Python 3
 RUN yum -y install python3-pip
 
-# Clean up the cache to reduce image size
-RUN yum clean all
 
 # Download and install MongoDB Atlas CLI
 RUN curl -O https://downloads.mongodb.com/atlas-cli/mongodb-atlas-latest.linux_x86_64.tar.gz && \
