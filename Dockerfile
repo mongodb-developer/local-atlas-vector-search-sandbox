@@ -1,8 +1,9 @@
 # Use the latest CentOS image as the base
 FROM centos:latest
 
-RUN yum -y update && \
-    yum -y install curl
+RUN sudo yum --disableplugin=fastestmirror update
+
+RUN yum -y install curl
 
 # Clean up the cache to reduce image size
 RUN yum clean all
