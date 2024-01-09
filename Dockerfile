@@ -1,3 +1,3 @@
 # Use the latest CentOS image as the base
-FROM centos:9
+arm64v8/centos:8
 
